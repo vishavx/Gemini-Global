@@ -1,0 +1,44 @@
+<template>
+    <header class="header">
+        <div class="logo">
+            <a href="/">
+                <img src={logo} alt="Gemini Globals Logo" />
+            </a>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <!-- Static navigation items -->
+                <li><a href="/" class="nav-link">Home</a></li>
+                <!-- Dropdown menu for categories -->
+                <template for:each={categories} for:item="category">
+                    <li key={category.name} class="nav-item">
+                        <button class="category-button">
+                            {category.name}
+                        </button>
+                        <ul class="subcategories">
+                            <template for:each={category.subcategories} for:item="subcategory">
+                                <li key={subcategory} class="subcategory-item">
+                                    <button
+                                        class="subcategory-button"
+                                        data-subcategory={subcategory}
+                                        onclick={handleSubCategoryClick}
+                                    >
+                                        {subcategory}
+                                    </button>
+                                </li>
+                            </template>
+                        </ul>
+                    </li>
+                </template>
+                <!-- <li><a href="/contact-us" class="nav-link">Contact Us</a></li> -->
+                <li>
+                    <button 
+                        class="nav-link" 
+                        onclick={handleContactClick}>
+                        Contact Us
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</template>

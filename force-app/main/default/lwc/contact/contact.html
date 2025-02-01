@@ -1,0 +1,71 @@
+<template>
+    <div class="hero slds-grid slds-wrap slds-m-top_large" >
+        <div class="hero_left slds-col slds-size_12-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12 slds-order_1 ">
+            <h1 class="form-title">Get in Touch</h1>
+            <div class="contact-us-section">
+                <h2 class="contact-heading">Questions or Concerns ? Let’s Solve Them Together !</h2>
+                <p class="contact-description">
+                    Whether it’s a question about our products, a suggestion to improve, or just a friendly hello – we’d love to hear from you. 
+                    Your thoughts and inquiries matter to us, and we’re here to assist you every step of the way. 
+                    Fill out the form below, and our team will get back to you promptly. Let’s connect and create something amazing together.
+                </p>
+            </div>
+        </div>
+        <div class="web-to-lead-container slds-align_absolute-center slds-col slds-size_12-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12 slds-order_2">
+            <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DNS00000BGW5d" method="POST" class="web-to-lead-form">
+            <input type="hidden" name="oid" value="00DNS00000BGW5d">
+            <input type="hidden" name="retURL" value="https://geminiglobal-dev-ed.develop.my.site.com/">
+
+            <div class="form-field">
+                <label for="first_name" class="form-label">First Name</label>
+                <input id="first_name" maxlength="40" name="first_name" size="20" type="text" class="form-input" required />
+            </div>
+
+            <div class="form-field">
+                <label for="last_name" class="form-label">Last Name</label>
+                <input id="last_name" maxlength="80" name="last_name" size="20" type="text" class="form-input" required />
+            </div>
+
+            <div class="form-field">
+                <label for="email" class="form-label">Email</label>
+                <input id="email" maxlength="80" name="email" size="20" type="text" class="form-input" required />
+            </div>
+
+            <div class="form-field">
+                <label for="phone" class="form-label">Phone</label>
+                <input id="phone" maxlength="40" name="phone" size="20" type="text" class="form-input" />
+            </div>
+
+            <div class="form-field">
+                <label for="company" class="form-label">Company</label>
+                <input id="company" maxlength="40" name="company" size="20" type="text" class="form-input" />
+            </div>
+
+            <div class="form-field">
+                <label for="city" class="form-label">City</label>
+                <input id="city" maxlength="40" name="city" size="20" type="text" class="form-input" />
+            </div>
+
+            <div class="form-field">
+                <label for="state" class="form-label">State/Province</label>
+                <input id="state" maxlength="20" name="state" size="20" type="text" class="form-input" />
+            </div>
+
+            <div class="form-field">
+                <label for="country" class="form-label">Country</label>
+                <input id="country" maxlength="40" name="country" size="20" type="text" class="form-input" />
+            </div>
+
+            <div class="form-field">
+                <label for="description" class="form-label">Your Message</label>
+                <textarea name="description" class="form-input"></textarea>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="submit-button">Get in Touch  <lightning-icon class="custom-icon" icon-name="utility:send" alternative-text="send!" variant="inverse" size="x-small" title="send"></lightning-icon></button>
+            </div>
+        </form>
+        </div>
+    </div>
+    
+</template>

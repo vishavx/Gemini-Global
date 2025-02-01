@@ -1,0 +1,106 @@
+.section {
+    padding: 4rem 4rem;
+    margin: 0 auto;
+}
+
+.title1-class {
+    font-size: 0.9rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-family: serif;
+    color: #000000;
+    margin-top: 6rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.image_section {
+    position: relative;
+    overflow: hidden; /* Prevent overflow */
+    cursor: pointer;
+}
+.image_section img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.image_section:hover img {
+    opacity: 0.9;
+    transform: scale(1.05); /* Add zoom effect on hover */
+}
+.title_class {
+    position: absolute;
+    text-transform: uppercase;
+    top: 90%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    color: #ebe7e4f2;
+    font-family: serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    text-align: center;
+    z-index: 2;
+    transition: color 0.3s ease;
+}
+.image_section:hover .title_class {
+    color: white; /* Change text color to white on hover */
+    font-size: 1.25rem;
+}
+
+@media screen and (max-width: 768px) {
+    .section {
+        padding: 3rem 1rem;
+        margin: 0 auto;
+    }
+    .title1-class{
+        font-size: 0.8rem;
+    }
+    .title_class {
+        position: absolute;
+        text-transform: uppercase;
+        top: 85%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        color: #ebe7e4f2;
+        font-family: serif;
+        font-weight: 200;
+        font-size: 0.75rem;
+        text-align: center;
+        z-index: 2;
+        transition: color 0.3s ease;
+    }
+    .image_section:hover .title_class {
+        color: white; /* Change text color to white on hover */
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section {
+        padding: 1.5rem 0.5rem;
+        margin: 0 auto;
+    }
+    .title1-class{
+        font-size: 11px;
+        margin-top: 4rem;
+    }
+    .title_class {
+        position: absolute;
+        text-transform: uppercase;
+        top: 85%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        color: #ebe7e4f2;
+        font-family: serif;
+        font-weight: 200;
+        font-size: 0.65rem;
+        text-align: center;
+        z-index: 2;
+        transition: color 0.3s ease;
+    }
+    .image_section:hover .title_class {
+        color: white; /* Change text color to white on hover */
+        font-size: 0.78rem;
+    }
+}
